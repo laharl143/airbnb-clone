@@ -10,7 +10,7 @@ const Logo = () => {
       className="md:block cursor-pointer"
       height="100"
       width="100"
-      src="/images/airbnb-logo.png"
+      src="/Images/airbnb-logo.png"
     />
   );
 };
