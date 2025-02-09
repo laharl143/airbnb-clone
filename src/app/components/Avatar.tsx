@@ -10,7 +10,7 @@ function Avatar() {
       height="30"
       width="30"
       alt="Avatar"
-      src="/Images/placeholder.jpg"
+      src="/images/placeholder.jpg"
     />
   );
 }
