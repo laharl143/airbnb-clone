@@ -1,10 +1,10 @@
 import Navbar from "@/sections/Navbar";
-import Modal from "./components/modals/Modal";
+import RegisterModal from "./components/modals/RegisterModal";
 
 export default function Home() {
   return (
     <>
-      <Modal actionLabel="Submit" title="Hello world" isOpen />
+      <RegisterModal/>
       <Navbar />
     </>
   );
