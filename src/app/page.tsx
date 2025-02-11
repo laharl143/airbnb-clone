@@ -1,15 +1,14 @@
 import Navbar from "@/sections/Navbar";
-import RegisterModal from "./components/modals/RegisterModal";
 import ToasterProvider from "./providers/ToasterProvider";
-import LoginModal from "./components/modals/LoginModal";
+import getCurrentUser from "./actions/getCurrentUser";
 
-export default function Home() {
+export default async function Home() {
+  const currentUser = await getCurrentUser();
+
   return (
     <>
       <ToasterProvider />
-      <LoginModal />
-      <RegisterModal />
-      <Navbar />
+      <Navbar currentUser={currentUser} />
     </>
   );
 }
